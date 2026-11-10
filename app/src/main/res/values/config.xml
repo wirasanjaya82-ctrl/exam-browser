@@ -8,10 +8,10 @@
 <resources>
     <!-- ===== Umum ===== -->
     <!-- Nama aplikasi yang muncul di HP -->
-    <string name="app_name">Exam Browser</string>
+    <string name="app_name">Exambro SMAN4</string>
 
     <!-- Nama sekolah, tampil di layar depan dan di atas layar ujian -->
-    <string name="school_name">Nama Sekolah Anda</string>
+    <string name="school_name">SMA Negeri 4 Medan</string>
 
     <!-- Password pengawas untuk keluar dari ujian.
          Kosongkan (<string name="exit_password"></string>) jika tanpa password. -->
