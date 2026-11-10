@@ -1,0 +1,31 @@
+name: Rakit APK
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.7'
+
+      - name: Rakit APK
+        run: gradle assembleDebug --no-daemon
+
+      - name: Ganti nama APK
+        run: cp app/build/outputs/apk/debug/app-debug.apk ExamBrowser.apk
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ExamBrowser-APK
+          path: ExamBrowser.apk
