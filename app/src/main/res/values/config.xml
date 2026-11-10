@@ -37,7 +37,7 @@
     <bool name="wajib_aksesibilitas_mati">true</bool>
     <bool name="wajib_tidak_root">true</bool>
     <bool name="wajib_baterai">false</bool>
-    <bool name="wajib_jangan_ganggu">false</bool>
+    <bool name="wajib_jangan_ganggu">true</bool>
     <bool name="wajib_memori">false</bool>
     <bool name="wajib_kamera">false</bool>
 
